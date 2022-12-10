@@ -1,0 +1,119 @@
+.main__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__div--topContainer {
+    column-gap: 6.67%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    height: 100%;
+    row-gap: 6.67%;
+}
+
+/* Input search */
+.div__div--input {
+    background-color: #2d2d2d;
+    border-radius: 2.4rem;
+    display: flex;
+    height: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 5px 8px 0 14px;
+    width: 100%;
+}
+.div__div--input .div__div--search {
+    height: 2rem;
+    margin: 0 1rem 0.4rem 0;
+    width: 2rem;
+}
+
+.div__div--input .div__div--search img {
+    height: 100%;
+    width: 100%;
+}
+ 
+.div__div--input input {
+    -webkit-tap-highlight-color: transparent; 
+
+    background-color: transparent;
+    border: none;
+    color: #eae3ea;
+    display: inline-block;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    height: 90%;
+    outline: none;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+/* Counter Style */
+.div__div--counter {
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 2.4rem;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    width: 7rem;
+}
+
+.div__div--counter div picture {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.div__div--counter div picture img {
+    height: inherit;
+    width: inherit;
+}
+
+.div__div--counter p {
+    color: #eae3ea;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+}
+
+/* Content dentist Style */
+.main__section .section__div--midContainer {
+    align-items: center;
+    background-color: transparent;
+    border: 0.2rem solid #eae3ea;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 32rem;
+    margin-top: 10rem;
+    padding-bottom: 1rem;
+    width: 90vw;
+
+    overflow-x: scroll;
+}
+
+/* Cards Style */
+.div__div--card{
+    background-color: var(--color-dark);
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0.8rem;
+    height: 68rem;
+    position: fixed;
+    transform: rotate(30deg);
+    transition: 0.3s;
+    top: 4rem;
+    width: 30.4rem;
+    z-index: -1;
+}
+
+.card-1{
+    left: -22rem;
+}
+
+.card-2{
+    right: -22rem;
+}

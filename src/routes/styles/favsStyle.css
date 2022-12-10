@@ -1,0 +1,21 @@
+.Favs__div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Container Cards Style */
+.Favs__div .card-grid {
+    align-items: center;
+    background-color: transparent;
+    border: 0.2rem solid #eae3ea;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 32rem;
+    margin-top: 10rem;
+    padding-bottom: 1rem;
+    width: 90vw;
+
+    overflow-x: scroll;
+}

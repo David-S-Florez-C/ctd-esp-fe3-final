@@ -1,0 +1,130 @@
+.Card__div {
+    align-items: center;
+    background-color: #fafafa;
+    border: 0.1rem #fafafa solid;
+    border-radius: 0.8rem;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0.2rem 0 1rem;
+    min-width: 25rem;
+}
+
+.Card__div .div__div-picture {
+    background-color: #2d2d2d;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom: 0.2rem #2d2d2d solid;
+    height: 12rem;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.Card__div .div__div-picture p {
+    color: #fafafa;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.Card__div .div__div-picture picture {
+    height: 11rem;
+    left: 7rem;
+    position: absolute;
+    top: 5rem;
+    width: 11rem;
+}
+
+
+.Card__div .div__div-picture picture img {
+    border: 0.2rem #2d2d2d solid;
+    border-radius: 50%;
+    height: inherit;
+    width: inherit;
+}
+
+.Card__div .div__div-text {
+    margin: 2rem 0 0 0;
+}
+
+.Card__div .div__div-text p {
+    color: #2d2d2d;
+    font-size: 1.6rem;
+}
+
+.Card__div .div__div-button {
+    border-top: 0.1rem solid #2d2d2d;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.Card__div .div__div-button button {
+    background-color: #2d2d2d;
+    border: none;
+    color: #fafafa;
+    margin: 1rem 0 2rem 0;
+}
+
+.Card__div .div__div-button a button:nth-child(1) {
+    border-radius: 50%;
+    height: 4rem;
+    padding-top: 0.6rem;
+    width: 4rem;
+}
+
+.Card__div .div__div-button button:nth-child(2) {
+    align-items: center;
+    border-radius: 0.8rem;
+    color: #fafafa;
+    display: flex;
+    font-size: 1.8rem;
+    height: 4rem;
+    padding: 0.7rem;
+    transition: all 0.2s;
+    width: 8rem;
+}
+
+.Card__div .div__div-button .div__button-like div picture {
+    display: block;
+    height: 2.5rem;
+    margin-right: 0.3rem;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    width: 2.5rem;
+}
+
+.Card__div .div__div-button .div__button-like:active {
+    transform: scale(0.95);
+}
+
+.Card__div .div__div-button .div__button-like:hover div {
+    animation: fly 0.6s ease-in-out infinite alternate;
+}
+
+.Card__div .div__div-button .div__button-like:hover picture {
+    transform: translateX(2.8rem) rotate(0deg) scale(1.1);
+}
+
+.Card__div .div__div-button .div__button-like div picture img {
+    height: inherit;
+    width: inherit;
+}
+
+.Card__div .div__div-button .div__button-like span {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.Card__div .div__div-button .div__button-like:hover span {
+    transform:  translateX(5rem);
+}
+
+@keyframes fly {
+    from { transform: rotateY(0.5rem); }
+    to { transform: translate(-0.5rem); }
+}

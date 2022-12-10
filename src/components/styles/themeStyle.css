@@ -1,0 +1,82 @@
+:root {
+    --color-dark: #242424;
+    --color-light: #eae3ea;
+}
+
+body {
+    background-color: var(--color-dark);
+    transition: 0.3s;
+}
+
+body.dark{ 
+    background: var(--color-dark); 
+    color: #eae3ea;
+}
+
+body.dark .div__div--card{
+    background-color: #646cff;
+}
+
+body.dark  .Form__div .div__form div > :is(input:focus, .has-value) ~ label{
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.75);
+    translate: 0 -4.1rem;
+
+}
+
+input { display: none; }
+
+.input__span {
+    overflow: hidden;
+    display: flex;
+    width: 6rem;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-dark);
+    cursor: pointer;
+}
+
+.input__span .span__span {
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.3s;
+}
+
+.input__span .span__span::before, .input__span .span__span::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 2.4rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2.4rem;
+}
+
+.input__span .span__span::before {
+    background-color: var(--color-light);
+}
+
+.input__span .span__span::after {
+    background-color: var(--color-light);
+    opacity: 0;
+    translate: -0.7rem -0.7rem;
+}
+
+body.dark .input__span{
+    background-color: var(--color-light);
+}
+
+body.dark .span__span {
+    translate: 3rem 0;
+}
+
+body.dark .span__span::after {
+    opacity: 1;
+}
+
+body.dark .span__span::before {
+    background-color: var(--color-dark);
+}

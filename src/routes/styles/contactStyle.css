@@ -1,0 +1,17 @@
+.Contact__div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.6rem;
+}
+
+.Contact__div h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.Contact__div p {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}

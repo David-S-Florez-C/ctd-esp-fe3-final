@@ -1,0 +1,36 @@
+.Detail__div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table with data dentist Style */
+.Detail__div .div__div-table {
+    background-color: #242424;
+    border: 0.2rem #2d2d2d solid;
+    border-radius: 0.8rem;
+    color: #eaeaea;
+    min-width: 25rem;
+}
+
+.Detail__div .div__div-table h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.Detail__div .div__div-table div {
+    padding: 1rem;
+    width: 100%;
+}
+
+.Detail__div .div__div-table div p {
+    font-size: 1.2rem;
+    opacity: 60%;
+}
+
+.Detail__div .div__div-table div span {
+    color: #eaeaea;
+    font-size: 1.6rem;
+}
